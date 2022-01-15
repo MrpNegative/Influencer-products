@@ -40,7 +40,7 @@ body{
     font-weight: 600;
 }
 .center-title{
-    animation: change 0.5s ease-in-out 0.5s infinite alternate;
+    animation: change 1s ease-in-out 0.5s infinite alternate;
     animation-play-state: running;
     
 }
@@ -76,14 +76,14 @@ header{
     height: 100vh;
 }
 /* Navigation  */
-.navigation{
+#navigation{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
 }
-.site-name{
+#site-name{
      font-size: 24px;
      cursor: pointer;
      color: var(--font-color);
@@ -107,34 +107,34 @@ nav ul li a:hover{
 }
 /* Head main item 
 ----------------------------- */
-.main-head{
+#main-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.head-left{
+#head-left{
     max-width: 600px;
 }
-.head-left h1{
+#head-left h1{
     font-size: 52px;
     color: var(--font-color);
     margin-bottom: 1px;
 }
-.head-left p{
+#head-left p{
     font-size: 16px;
     font-weight: 600;
 }
-.head-right{
+#head-right{
     margin-top: 60px; 
 }
-.head-right img{
+#head-right img{
     width: 100%;
 }
 /* -------------------------------------
 --------------------------------------------Popular collection
 ------------------------------------------  */
 
-.products{
+#products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
@@ -190,7 +190,7 @@ span{
 /*---------------------------------------
 -------------------------- Expert section 
 --------------------- */
-.experts{
+#experts{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -254,52 +254,49 @@ footer{
 ------------------------ Media queary 
 --------------------- */
 @media only screen and (max-width: 688px){
-    header{
+    .container{
         margin: 0;
-    }
-    main{
-        margin: 0 20px;
     }
     header{
         height: 700px;
     }
-    .site-name{
+    #site-name{
         font-size: 16px;
     }
     nav{
         display: none;
     }
     /* main head  */
-    .main-head{
+    #main-head{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    .head-left{
+    #head-left{
         order: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .head-left h1{
+    #head-left h1{
         font-size: 28px;
         color: var(--font-color);
         margin-bottom: 1px;
         text-align: center;
     }
-    .head-left p{
+    #head-left p{
         font-size: 14px;
         font-weight: 400;
         text-align: center;
     }
-    .head-right img{
+    #head-right img{
         width: 80%;
         margin: 0 10%;
     }
-    .products{
+    #products{
         grid-template-columns: 1fr;
-        max-width: 100%;
     }
+
    
 }
 @media only screen and (min-width:689px) and (max-width:1050px){
@@ -309,7 +306,7 @@ footer{
     header{
         height: 450px;
     }
-    .site-name{
+    #site-name{
         font-size: 19px;
     }
     nav ul li{
@@ -323,25 +320,25 @@ footer{
         color: var(--font-color);
         padding: 10px 2px;
     }
-    .head-left{
+    #head-left{
         max-width: 400px;
         display: flex;
         flex-direction: column;
         align-items: left;
     }
-    .head-left h1{
+    #head-left h1{
         font-size: 25px;
         color: var(--font-color);
         margin-bottom: 1px;
     }
-    .head-left p{
+    #head-left p{
         font-size: 14px;
         font-weight: 400;
     }
-    .products{
+    #products{
         grid-template-columns: 1fr 1fr;
     }
-    .head-right img{
+    #head-right img{
         width: 80%;
     }
 }
