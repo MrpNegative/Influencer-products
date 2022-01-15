@@ -11,8 +11,7 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-header, main{
-    
+.container{
     margin: 0 7%;
 }
 /* center  head  */
@@ -49,9 +48,10 @@ header{
     align-items: center;
     height: 80px;
 }
-.site-name{
+.site-name h2{
      font-size: 24px;
      cursor: pointer;
+     color: var(--font-color);
 }
 nav ul{
     display: flex;
@@ -70,7 +70,8 @@ nav ul li a{
 nav ul li a:hover{
     color: rgba(0, 0, 0, 0.616);
 }
-/* Head main item  */
+/* Head main item 
+----------------------------- */
 .main-head{
     display: flex;
     justify-content: space-between;
@@ -164,7 +165,7 @@ span{
 .expert{
     background-color: white;
     width: 350px;
-    height: 630px;
+    height: 650px;
     border-radius: 10px;
     margin-bottom: 50px;
 }
@@ -216,7 +217,49 @@ footer{
     color: white;
     border-radius: 50%;
 }
-  
-@media screen {
-    
+/*--------------------
+------------------------ Media queary 
+--------------------- */
+@media only screen and (max-width: 688px){
+    header, main{
+        margin: 0 20px;
+    }
+    header{
+        height: 700px;
+    }
+    .site-name{
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    /* main head  */
+    .main-head{
+        flex-wrap: wrap;
+    }
+    .head-left{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .head-left h1{
+        font-size: 28px;
+        color: var(--font-color);
+        margin-bottom: 1px;
+        text-align: center;
+    }
+    .head-left p{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .head-right img{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .products{
+        grid-template-columns: 1fr;
+    }
+   
 }
