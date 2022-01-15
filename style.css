@@ -11,10 +11,27 @@ body{
     margin: 0 7%;
     background: #aaaaaa23;
 }
+button{
+    border: 0;
+    width: 200px;
+    height: 45px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 50px ;
+    margin: 2px;
+}
+
 /*-------------------------------
                                  head section 
 -------------------------------- */
+header{
+    height: 100vh;
+}
+/* Navigation  */
 .navigation{
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,4 +57,93 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: rgba(0, 0, 0, 0.616);
+}
+/* Head main item  */
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-left{
+    max-width: 600px;
+}
+.head-left h1{
+    font-size: 52px;
+    color: var(--font-color);
+    margin-bottom: 1px;
+}
+.head-left p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.head-right{
+    margin-top: 60px; 
+}
+.head-right img{
+    width: 100%;
+}
+/* -------------------------------------
+--------------------------------------------Popular collection
+------------------------------------------  */
+.popular-collection{
+    width: 100%;
+}
+#popular-title{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    justify-items: center;
+    margin: 20px 0;
+}
+.product{
+    background-color: white;
+    border-radius: 10px;
+    width: 330px;
+    height: 476px;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.124);
+}
+.product img{
+    padding: 17px 14px 0 14px;
+}
+/* product description   */
+.product-dec{
+    padding: 0 14px 14px 14px;
+}
+.product-dec h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 3px 0;
+}
+.product-dec h3{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin: 3px 0;
+}
+#rating{
+    font-style: 14px;
+    margin: 8px 0;
+    color: Orange;
+}
+span{
+    color: var(--font-color);
+    margin-left: 8px;
+}
+.product-dec p{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px 0; 
+}
+.see-more{
+    text-align: right;
+}
+.see-more a{
+    text-decoration: none;
+    color: var(--font-color);
 }
