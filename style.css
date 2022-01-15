@@ -257,17 +257,11 @@ footer{
     header{
         margin: 0;
     }
-    .navigation{
-        margin: 2px;
-    }
     main{
         margin: 0 20px;
     }
     header{
         height: 700px;
-    }
-    .navigation{
-        justify-content: center;
     }
     .site-name{
         font-size: 16px;
